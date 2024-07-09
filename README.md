@@ -17,7 +17,7 @@ The studies conducted with this approach do not make use of the prevously mentio
 ```python
 import pandas as pd
 
-data = pd.read_csv("circuits_complete.csv")
+df = pd.read_csv("circuits_complete.csv")
 
 columns = df.columns.tolist()
 columns.remove("Error_Hanoi")
