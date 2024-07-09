@@ -38,6 +38,6 @@ The second embedding method provides a definition of each circuit by representin
 backend = "hanoi" # or "cairo"
 num_qubit = 4 # or any other number form 4 to 10 
 
-data = torch.load(f"/content/drive/Shareddrives/Qserv - Personal/data(4q-hanoi).pt")
+data = torch.load(f"data({num_qubit}q-{backend}).pt")
 X, y = data.tensors
 ```
