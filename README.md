@@ -6,10 +6,10 @@ The Qserv dataset collects the embeddings of 35000 random quantum circuits (exec
 
 The first embedding method provides a definition of each circuit by a quantum gate count. Besides the gate count, the dataset also contains the following columns:
 
-➥ Error_Hanoi: Calculated error with the Hanoi backend
-➥ Error_Cairo: Calculated error with the Cairo backend
-➥ circuit: Index of the circuit
-➥ num_qubits: Number of qubits that the circuit contains
+➥ Error_Hanoi: Calculated error with the Hanoi backend  
+➥ Error_Cairo: Calculated error with the Cairo backend  
+➥ circuit: Index of the circuit  
+➥ num_qubits: Number of qubits that the circuit contains  
 ➥ depth: Depth of the circuit
 
 The studies conducted with this approach do not make use of the prevously mentioned columns in the training process.
