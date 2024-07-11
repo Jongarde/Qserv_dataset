@@ -1,8 +1,8 @@
 # Qserv_dataset
 
-The Qserv dataset collects the embeddings of 35000 random quantum circuits (executed in Hanoi and Cairo backends) in two separate ways with the purpose of approaching the problem of quantum error estimation by employing machine learning and neural network methods.
+The Qserv dataset collects the embeddings of 35000 random quantum circuits (executed in Hanoi and Cairo backends), in two different ways, with the purpose of approaching the problem of quantum error estimation by employing machine learning and neural network methods.
 
-## Gate counts embedding
+## Tabular embeddings
 
 The first embedding method provides a definition of each circuit by a quantum gate count. Besides the gate count, the dataset also contains the following columns:
 
@@ -12,7 +12,7 @@ The first embedding method provides a definition of each circuit by a quantum ga
 ➥ num_qubits: Number of qubits that the circuit contains  
 ➥ depth: Depth of the circuit
 
-The studies conducted with this approach do not make use of the prevously mentioned columns in the training process.
+The studies conducted with this approach do not make use of the aforementioned columns within the set of independent variables, in the training process.
 
 ```python
 import pandas as pd
@@ -30,9 +30,9 @@ X = df[columns]
 y = df["Error_Hanoi"] # or df["Error_Cairo"]
 ```
 
-## Tabular data adaptation
+## Image embeddings
 
-The second embedding method provides a definition of each circuit by representing them with a tabular-based projection.
+The second embedding method provides a definition of each circuit by representing them with a grid-like projection.
 
 ```python
 backend = "hanoi" # or "cairo"
